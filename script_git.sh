@@ -3,6 +3,6 @@
 
 git add .
 
-git commit -m "?"
+git commit -m "$(date +'%Y-%m-%d')"
 
 git push cpp_ master
