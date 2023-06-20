@@ -1,15 +1,32 @@
 .PHONY : clean
 CC = g++
 RM = rm 
-EXE = a.out
+# CFLAGS = -Wall -g
+CFLAGS = -g
 
-SRCS = $(wildcard *.cpp)
-OBJS = $(patsubst %.cpp,%.o,$(SRCS))
+# 源文件目录
+DIR_SRC = ./src
+# 头文件目录
+DIR_INC = ./include
+# 目标文件目录
+DIR_OBJ = ./obj
+# 可执行文件目录
+DIR_BIN = ./bin
 
-$(EXE) : $(OBJS)
-	$(CC) -o $@ $^
-%.o : %.cpp
-	$(CC) -o $@ -c $^
+
+SRCS = $(wildcard ${DIR_SRC}/*.cpp)
+# OBJS = $(patsubst %.cpp,${DIR_OBJ}/%.o,$(notdir ${SRCS}))
+OBJS = $(patsubst %.cpp,$(DIR_OBJ)/%.o,$(notdir $(SRCS)))
+
+TARGET = $(DIR_BIN)/main 
+
+all: $(TARGET)
+
+$(DIR_OBJ)/%.o: $(DIR_SRC)/%.cpp
+	$(CC) $(CFLAGS) -o $@ -I${DIR_INC} -c $<
+
+$(TARGET): $(OBJS)
+	$(CC) $(CFLAGS) -o $@ $^
 
 clean:
-	$(RM) $(EXE) $(OBJS)
+	$(RM) $(TARGET) $(DIR_OBJ)/*.o

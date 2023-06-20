@@ -30,7 +30,7 @@ int kmp(std::string &text, std::string &pattern){
        while(j>0 && text[i] != pattern[j]){
             j = next[j-1];
        } 
-       if(text[i] == pattern[j]){
+      if(text[i] == pattern[j]){
             ++j;
        }
        if(j==pattern.size()){
