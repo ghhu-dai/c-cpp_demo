@@ -1,0 +1,1 @@
+/usr/bin/c++  -O0 -Wall -g -rdynamic CMakeFiles/2-3-1-memory3.dir/2-3-1-memory3.cpp.o -o 2-3-1-memory3 

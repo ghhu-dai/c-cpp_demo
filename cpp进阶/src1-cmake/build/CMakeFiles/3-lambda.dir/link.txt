@@ -1,0 +1,1 @@
+/usr/bin/c++  -O0 -Wall -g -rdynamic CMakeFiles/3-lambda.dir/3-lambda.cpp.o -o 3-lambda 

@@ -1,0 +1,1 @@
+/usr/bin/c++  -O0 -Wall -g -rdynamic CMakeFiles/1-2-shared_ptr-app.dir/1-2-shared_ptr-app.cpp.o -o 1-2-shared_ptr-app  -lpthread 

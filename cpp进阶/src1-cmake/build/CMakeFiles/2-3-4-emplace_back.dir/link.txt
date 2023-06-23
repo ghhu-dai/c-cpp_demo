@@ -1,0 +1,1 @@
+/usr/bin/c++  -O0 -Wall -g -rdynamic CMakeFiles/2-3-4-emplace_back.dir/2-3-4-emplace_back.cpp.o -o 2-3-4-emplace_back 

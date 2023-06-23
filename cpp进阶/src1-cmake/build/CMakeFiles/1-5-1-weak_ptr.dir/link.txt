@@ -1,0 +1,1 @@
+/usr/bin/c++  -O0 -Wall -g -rdynamic CMakeFiles/1-5-1-weak_ptr.dir/1-5-1-weak_ptr.cpp.o -o 1-5-1-weak_ptr  -lpthread 

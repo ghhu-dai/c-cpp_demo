@@ -1,0 +1,1 @@
+/usr/bin/c++  -O0 -Wall -g -rdynamic CMakeFiles/4-priority_queue.dir/4-priority_queue.cpp.o -o 4-priority_queue 

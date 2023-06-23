@@ -1,0 +1,1 @@
+/usr/bin/c++  -O0 -Wall -g -rdynamic CMakeFiles/2-1-mystring.dir/2-1-mystring.cpp.o -o 2-1-mystring 
