@@ -9,7 +9,7 @@ void Print(T &t)
     cout << "L" << t << endl;
 }
 template <class T>
-void Print(T &&t)
+void Print(T &&t) // 这里 t 本身是一个左值，&&表示 可以传递左值 和右值 
 {
     cout << "R" << t << endl;
 }
