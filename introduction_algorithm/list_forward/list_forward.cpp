@@ -93,7 +93,7 @@ int list_forward::delete_from_tail(){
         delete head;
         head = tail = 0;
     }else{
-        for(prev; prev->next != tail; prev = prev->next);
+        for(; prev->next != tail; prev = prev->next);
         delete tail;
         tail = prev;
         tail->next = 0;
