@@ -3,11 +3,11 @@
 
 // 单向链表
 
-// 单身链表节点类定义
+// 单向链表节点类定义
 class LF_node{
 public:
     LF_node(){
-        next = nullptr;
+        next = nullptr;  // info的值 不设置可能是0或未定义的，但指针必须 设置为空，防止其指向其他地方
     }    
 
     LF_node(int x, LF_node *ptr = 0){ // 内联？
