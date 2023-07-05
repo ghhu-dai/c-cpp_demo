@@ -45,7 +45,7 @@ int main(int argc, char *argv[]){
 
         if(pid == 0){  // 子进程
             break;
-        }else if(pid > 0){ // 父进程
+        }else if(pid > 0){ // 父进程，每一次循环都要创建信号SIGCHLD捕捉函数是否有必要
             struct sigaction act;
             act.sa_handler = catch_child;
             sigemptyeset(&act.sa_mask);
