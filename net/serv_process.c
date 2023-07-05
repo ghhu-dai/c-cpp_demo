@@ -65,7 +65,7 @@ int main(int argc, char *argv[]){
 
             ret = read(cfd, &buf, sizeof(buf));
             if(ret == 0){
-                close(cfd);
+                close(cfd); // 子进程退出之前 ，别忘了关闭文件
                 exit(1);
             }
 
